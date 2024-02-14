@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alphabet clash game</title>
+    <!-- daisyui cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#1E1E1E]">
+    <main class="bg-[url('images/background.png')] min-h-screen bg-no-repeat bg-center">
+        <div id="home" class="flex justify-center items-center min-h-screen">
+            <div class="text-center flex flex-col items-center gap-4">
+                <h2 class="text-8xl text-[#ffffff]">ALPHABET CLASH</h2>
+                <p class="text-[#ffffff]">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
+                <button class="btn text-[#010313]">Play Now</button>
+            </div>
+        </div>
+
+        <div id="keyboard" class="flex flex-col min-h-screen justify-center items-center gap-8 hidden">
+            <div class="artboard artboard-horizontal phone-6 border-4 border-[#010313] bg-[#ffffffcc] ">
+                <div class="flex justify-center">
+                    <p class=" bg-[#2F2941] p-2 pb-3 text-white text-3xl rounded-b-xl">Don't watch keyboard while
+                        playing...</p>
+                </div>
+                <div class="flex justify-center items-center">
+                    <p id="displayY" class="text-9xl text-black">Y</p>
+                </div>
+            </div>
+
+            <div>
+                <div class="flex justify-center gap-1 my-1 w-full">
+                    <kbd id="q" class="kbd">q</kbd>
+                    <kbd id="w" class="kbd">w</kbd>
+                    <kbd id="e" class="kbd">e</kbd>
+                    <kbd id="r" class="kbd">r</kbd>
+                    <kbd id="t" class="kbd">t</kbd>
+                    <kbd id="y" class="kbd">y</kbd>
+                    <kbd id="u" class="kbd">u</kbd>
+                    <kbd id="i" class="kbd">i</kbd>
+                    <kbd id="o" class="kbd">o</kbd>
+                    <kbd id="p" class="kbd">p</kbd>
+                </div>
+                <div class="flex justify-center gap-1 my-1 w-full">
+                    <kbd id="a" class="kbd">a</kbd>
+                    <kbd id="s" class="kbd">s</kbd>
+                    <kbd id="d" class="kbd">d</kbd>
+                    <kbd id="f" class="kbd">f</kbd>
+                    <kbd id="g" class="kbd">g</kbd>
+                    <kbd id="h" class="kbd">h</kbd>
+                    <kbd id="j" class="kbd">j</kbd>
+                    <kbd id="k" class="kbd">k</kbd>
+                    <kbd id="l" class="kbd">l</kbd>
+                </div>
+                <div class="flex justify-center gap-1 my-1 w-full">
+                    <kbd id="z" class="kbd">z</kbd>
+                    <kbd id="x" class="kbd">x</kbd>
+                    <kbd id="c" class="kbd">c</kbd>
+                    <kbd id="v" class="kbd">v</kbd>
+                    <kbd id="b" class="kbd">b</kbd>
+                    <kbd id="n" class="kbd">n</kbd>
+                    <kbd id="m" class="kbd">m</kbd>
+                    <kbd id="/" class="kbd">/</kbd>
+                </div>
+            </div>
+            <div class="flex justify-between w-3/4">
+                <button class="btn bg-[#894189] text-white rounded-full">
+                    Life
+                    <img src="images/heart.svg" class="" alt="">
+                    <span>1</span>
+                </button>
+                <button class="btn bg-[#894189] text-white rounded-full">
+                    Score
+                    <img src="images/dolor.svg" class="" alt="">
+                    <span>1</span>
+                </button>
+            </div>
+        </div>
+
+        <div id="score" class="flex flex-col items-center justify-center min-h-screen hidden">
+            <div class="text-center flex flex-col gap-6 items-center">
+                <h2 class="text-white text-9xl">Score: <span>14</span></h2>
+                <button class="btn text-black">Play again</button>
+                <p class="text-white">Practice will make you Pro</p>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- js file -->
+    <script src="home.js"></script>
+</body>
+
+</html>
