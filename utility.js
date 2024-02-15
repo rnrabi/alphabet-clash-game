@@ -52,6 +52,7 @@ function gameOver() {
 }
 
 function playGround() {
+    hideElementById('score')
    playNow();
    const currentScoreNull = document.getElementById('gameScore');
    currentScoreNull.innerText = 0;
