@@ -16,7 +16,7 @@
             <div class="text-center flex flex-col items-center gap-4">
                 <h2 class="text-8xl text-[#ffffff]">ALPHABET CLASH</h2>
                 <p class="text-[#ffffff]">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-                <button class="btn text-[#010313]">Play Now</button>
+                <button onclick="playNow()" class="btn text-[#010313]">Play Now</button>
             </div>
         </div>
 
@@ -70,20 +70,20 @@
                 <button class="btn bg-[#894189] text-white rounded-full">
                     Life
                     <img src="images/heart.svg" class="" alt="">
-                    <span>1</span>
+                    <span id="lifeScore">5</span>
                 </button>
                 <button class="btn bg-[#894189] text-white rounded-full">
                     Score
                     <img src="images/dolor.svg" class="" alt="">
-                    <span>1</span>
+                    <span id="gameScore">1</span>
                 </button>
             </div>
         </div>
 
         <div id="score" class="flex flex-col items-center justify-center min-h-screen hidden">
             <div class="text-center flex flex-col gap-6 items-center">
-                <h2 class="text-white text-9xl">Score: <span>14</span></h2>
-                <button class="btn text-black">Play again</button>
+                <h2 class="text-white text-9xl">Score: <span id="final-score">0</span></h2>
+                <button onclick="playGround()" id="play-again" class="btn text-black">Play again</button>
                 <p class="text-white">Practice will make you Pro</p>
             </div>
         </div>
@@ -92,6 +92,7 @@
 
     <!-- js file -->
     <script src="home.js"></script>
+    <script src="utility.js"></script>
 </body>
 
 </html>
