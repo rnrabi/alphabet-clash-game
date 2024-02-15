@@ -29,6 +29,13 @@ function playNow() {
 
 document.addEventListener('keyup', function (event) {
     const currentAlphabet = getElementTextById('displayY');
+    if (event.key === 'Escape') {
+        console.log(event.key)
+        gameOver();
+        const currentScore = getTextElementValueById('gameScore');
+        setTextElementValueById('final-score', currentScore);
+        removeBackgroundColorById(currentAlphabet);
+    }
     if (currentAlphabet === event.key) {
         removeBackgroundColorById(currentAlphabet);
         playNow();
