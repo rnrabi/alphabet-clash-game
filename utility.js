@@ -48,6 +48,7 @@ function gameOver() {
     hideElementById('home');
     hideElementById('keyboard');
     showElementById('score');
+    isGamePlay = false;
 
 }
 
